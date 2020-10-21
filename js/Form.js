@@ -1,4 +1,4 @@
-class Form {
+class Form{
 
   constructor() {
     this.input = createInput("Name");
@@ -37,6 +37,7 @@ class Form {
     this.reset.mousePressed(()=>{
       player.updateCount(0);
       game.update(0);
+      game.updateCarsAtEnd(0);
     });
 
   }
